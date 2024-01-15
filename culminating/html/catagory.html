@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catagory</title>
+    
+    <style>
+        body{
+             background-color: #FFFAFA;
+         }
+        /* #welcome{
+            height: 170px;
+            width: 1250px;
+        } */
+        #welcome {
+            width: 1250px;
+            height: 200px;
+            
+        }
+    
+         #Box2 {
+            display: inline;
+            float: right;
+            width: 250px;
+            margin-left: 100px;
+            margin-right: 150px;
+            height: 300px;
+            
+        }
+        .rug{
+            width: 300px;
+            height: 270px;
+        }
+
+        #Box3 {
+            display: inline;
+            float: middle;
+            width: 250px;
+            height: 300px;
+            
+        }
+        #Box4 {
+            display: inline;
+            float: left;
+            width: 250px;
+            margin-right: 100px;
+            height: 300px;
+            
+        }
+        #ThreeBox{
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding-top: 70px;
+            padding-bottom:100px ;
+        }
+        footer{
+            height: 190px;
+            background-color: #8a7d8191;
+        }
+        #logo{
+            width: 90px;
+            height: 90px;
+            padding-right: 1100px;
+        }
+        .link{
+           text-align: right;
+           padding-right: 90px;
+           padding-top: 50px;
+        }
+        #container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1250px;
+        }
+
+        #head {
+            background-color: #FFFAFA;
+            text-align: center;
+            padding-top: 1px;
+            padding-bottom: 25px;
+            word-spacing: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- a header image to show user which webpage they currently are on -->
+    <header>
+        <img id="welcome" src="images/types.png" alt="Welcome">
+    </header>
+    <nav id="container">
+        <nav id="head">
+            <!-- links to diffrent pages of website: -->
+            <a href="catagory.html">Shop by Category</a>
+            <a href="quiz.html">Game</a>
+            <a href="aboutUs.html">About us</a>
+            <a href="form.html">join & contact us</a>
+        </nav>
+    </nav>
+
+    <main>
+       <!-- images are linked to take user to their favorite category -->
+        <div id="ThreeBox">
+            <!-- persian category -->
+            <div id="Box2" class="box">
+                <h3>Persian rugs</h3>
+                <a href="persian.html"><img class="rug" src="images/persianCat.jpg" alt="rug"></a>
+                <!-- <a href="index.html" target=_blank><img class="rug" src="images/persianCat.jpg" alt="rug"> -->
+                   <!-- <img class="rug" src="images/persianCat.jpg" alt="rug"> -->
+   
+               </div>
+               <!-- shag rugs category -->
+               <div id="Box3" class="box">
+                <h3>Shag rugs</h3>
+
+                <a href="shag.html"><img class="rug" src="https://secure.img1-fg.wfcdn.com/im/13158130/compr-r85/5355/53552738/welford-shag-white-area-rug-.jpg" alt="rug"></a>
+   
+               </div>
+               <!-- distressed rug category -->
+               <div id="Box4" class="box">
+                <h3>Distressed rugs</h3>
+                <a href="distressed.html"><img class="rug" src="https://images-na.ssl-images-amazon.com/images/I/81XEfcb4KJL._AC_SL1440_.jpg" alt="rug"></a>
+   
+               </div>
+            </div> 
+        
+        
+    </main>
+    <footer>
+        <div class="link">
+            <a href="form.html">Contavt Us</a>
+     <br>
+     <!-- quiz link -->
+     <a href="quiz.html">Press Here To do a quiz about carpets</a>
+     <br>
+     <!-- email addresses links -->
+     <address>
+         To contact the website creater email to<a class="email" href="mailto:saminkoleini@gmail.com">S.K</a> and <a class="email" href="mailto:shirin.fateh@student.tdsb.on.ca">Sh.Fateh</a>
+     </address>
+ </div>
+ <!-- logo image -->
+     <img  id="logo"src="images/logo.png" alt="ourLogo">
+     </footer>
+</body>
+</html>

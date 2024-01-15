@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>distressed</title>
+    <!-- script source for the Cart -->
+    <script src="store.js" async></script>
+    <style>
+        
+body{
+             background-color: #FFFAFA;
+         }
+#headAfter {
+            background-color: #948e8ee0;
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        #welcome {
+            width: 1250px;
+            height: 200px;
+            
+        }
+        #ThreeBox{
+            
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            padding-top: 70px;
+            padding-bottom: 100px;
+        }
+        
+        /* #box1 {
+             display: inline;
+            float: right; 
+            width: 300px;
+            margin-left: 100px;
+            margin-right: 50px; 
+            height: 300px;
+            
+        }
+        #box2{
+            
+            display: inline;
+             float: middle;  
+            width: 300px;
+            height: 300px;
+            
+        }
+        #box3{
+            display: inline;
+            float: left; 
+            width: 250px;
+             margin-right: 50px; 
+            height: 300px;
+        } */
+        
+        .shop-item-image{
+            width: 250px;
+            height: 340px;
+        }
+        .shop-item-title{
+            font-size: 22px;
+            
+        }
+        #box1 {
+            float: left;
+            width: 250px;
+            padding-left: 100px;
+            padding-bottom: 50px;
+            padding-top: 60px;
+        }
+        #box2{
+            float: left; 
+            width: 250px;
+            padding-left: 150px;
+            padding-bottom: 50px;
+            padding-top: 60px;
+        }
+        #box3{
+            float: left; 
+            width: 250px;
+            padding-left: 190px;
+            padding-bottom: 50px;
+            padding-top: 60px;
+        }
+        #show{
+            position: fixed;
+            padding-right: 100px;
+            background-color: rgb(227, 189, 241);
+            height:30px ;
+        }
+        #cart {
+            width: 1250px;
+            height: 200px;
+            
+        }
+        #head {
+            background-color: #FFFAFA;
+            text-align: center;
+            padding-top: 1px;
+            padding-bottom: 25px;
+            word-spacing: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img id="welcome" src="images/dissHead.png" alt="Welcome">
+    </header>
+    <nav id="head">
+        <!-- links to diffrent pages of website: -->
+        <a href="index.html">HomePage</a>
+        <a href="catagory.html">BackToCatagories</a>
+        <a href="persianTwo.html">Persian</a>
+        <a href="shag.html">Shag</a>
+    </nav>
+    <main>
+        <!-- <img id="persianMain" src="images/persianRugsInfo.png" alt="carpet"> -->
+        <nav id="headAfter">Pick your favorite rugs and then come back here to press Show My Cart button to see yor cart
+            
+                <!-- It shows you the rugs that you selected to buy -->
+                
+            
+        </nav>
+        <a href="#start"><button id="show">Show My Cart</button></a>
+
+        <section class="container content-section">
+        <!-- Distressed rugs section -->
+            <div class="ThreeBox">
+                <!-- item number 1 -->
+                <div class="shop-item" id="box1">
+                    <span class="shop-item-title">Hillsby Grey Area Rug</span>
+                    <img class="shop-item-image" src="images/dis1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1860.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+              <!-- item nuber 2 -->
+                   <div class="shop-item" id="box2">
+                    <span class="shop-item-title">Distressed Foliage Rug</span>
+                    <img class="shop-item-image" src="images/dis2.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1427.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+   
+               
+              <!-- item number 3 -->
+               <div class="shop-item" id="box3">
+                <span class="shop-item-title">Distressed Nadine Rug</span>
+                <img class="shop-item-image" src="images/dis3.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$490.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        
+            <!-- line two(2) -->
+            <!-- item number 4 -->
+        <div class="ThreeBox">
+                <div class="shop-item" id="box1">
+                    <span class="shop-item-title">Distressed Ensi Rug</span>
+                    <img class="shop-item-image" src="images/dis4.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$420.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+              <!-- item number 5 -->
+                   <div class="shop-item" id="box2">
+                    <span class="shop-item-title">Pharaoh Distressed Rug</span>
+                    <img class="shop-item-image" src="images/dis5.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$477.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+   
+               
+              <!-- item number 6 -->
+               <div class="shop-item" id="box3">
+                <span class="shop-item-title">Amaranth Rug</span>
+                <img class="shop-item-image" src="images/dis6.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$946.75</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- line three(3) -->
+         <!-- Hillsby rugs section -->
+         <!-- item number 7 -->
+        <div class="ThreeBox">
+            <div class="shop-item" id="box1">
+                <span class="shop-item-title">Brandt Dark Grey Area Rug</span>
+                <img class="shop-item-image" src="images/dis7.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$220.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- item number 8 -->
+          
+               <div class="shop-item" id="box2">
+                <span class="shop-item-title">Hillsby Oriental Saffron</span>
+                <img class="shop-item-image" src="images/dis8.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$420.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+           
+          <!-- item number 9 -->
+           <div class="shop-item" id="box3">
+            <span class="shop-item-title">Hillsby Grey Area Rug</span>
+            <img class="shop-item-image" src="images/dis9.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$360.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+        
+    
+
+               
+        </section>
+<!-- cart html -->
+        <img id="cart" src="images/cart.png" alt="cart">
+        <section class="container content-section">
+            <!-- <h2 class="section-header">C</h2> -->
+            <!-- The cart button shows you your cart and what you want to buy -->
+
+            <a name="start"></a>
+            <div class="cart-row">
+                 <!-- This shows you the item that you choose -->
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <!-- This shows you the item's price -->
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <footer class="main-footer">
+           
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

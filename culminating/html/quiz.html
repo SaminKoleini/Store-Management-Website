@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/html/quiz.js"></script>
+    <style>
+        body{
+            background-color:#FFFAFA ;
+        }
+        #quizH{
+            width: 1250px;
+            height: 200px;
+
+        }
+        main{
+            background-image: url(images/quizBack.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+            padding-top: 40px;
+            font-size: large;
+            font-style: Arial;
+        }
+        footer{
+            height: 190px;
+            background-color: #f3c0c0c9;
+            
+        }
+        #logo{
+            width: 90px;
+            height: 90px;
+            padding-right: 1100px;
+        }
+        .link{
+           text-align: right;
+           padding-right: 90px;
+           padding-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header><img id="quizH"src="images/quizHeader.png" alt="quiz"></header>
+    <main>
+    <!-- question1 -->
+    <div id="box1"style='transform: scale(0.65); position: relative; top: -100px;'>
+        <h3>What is the most expensive rug in the world?</h3>
+        <p>Pick 1 answer</p>
+        <hr />
+        <!-- multiple choices -->
+      <!-- choice 1 -->
+        <div id='block-1' style='padding: 10px;'>
+          <label for='option-1' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='Heriz Azarbayjan' id='option-1' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Sotheby's  17th century Antique Persian rug</label>
+          <span id='result-1'></span>
+        </div>
+        <hr />
+      <!-- choice 2 -->
+        <div id='block-2' style='padding: 10px;'>
+          <label for='option-2' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value="Sotheby's  17th century Antique Persian rug" id='option-2' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Heriz Azarbayjan</label>
+          <span id='result-2'></span>
+        </div>
+        <hr />
+      <!-- choice3 -->
+        <div id='block-3' style='padding: 10px;'>
+          <label for='option-3' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='Afhsar rug' id='option-3' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+          Afhsar rug</label>
+          <span id='result-3'></span>
+        </div>
+        <hr />
+      <!-- choice 4 -->
+        <div id='block-4' style='padding: 10px;'>
+          <label for='option-4' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='1/6' id='option-4' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            SARAB rug</label>
+          <span id='result-4'></span>
+        </div>
+        <hr />
+        <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+        <a id='showanswer1'></a>
+    </div>
+      <!-- <a id='showanswer1'></a> -->
+      <!-- question2 -->
+      <div id="box2"style='transform: scale(0.65); position: relative; top: -100px;'>
+        <h3>What is most carpet made of?</h3>
+        <p>Pick 1 answer</p>
+        <hr />
+        <!-- multiple choices -->
+      <!-- choice 1 -->
+        <div id='block-12' style='padding: 10px;'>
+          <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='6/24' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Pile</label>
+          <span id='result-12'></span>
+        </div>
+        <hr />
+      <!-- choice 2 -->
+        <div id='block-11' style='padding: 10px;'>
+          <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='6' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            synthetic fiber</label>
+          <span id='result-11'></span>
+        </div>
+        <hr />
+      <!-- choice 3 -->
+        <div id='block-13' style='padding: 10px;'>
+          <label for='option-13' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='1/3' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Cotton</label>
+          <span id='result-13'></span>
+        </div>
+        <hr />
+      <!-- choice 4 -->
+        <div id='block-14' style='padding: 10px;'>
+          <label for='option-14' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='1/6' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Wool</label>
+          <span id='result-14'></span>
+        </div>
+        <hr />
+        <button type='button' onclick='displayAnswer2()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+        <a id='showanswer2'></a>
+    </div>
+      <!-- <a id='showanswer2'></a> -->
+      <!-- question3 -->
+      <div style='transform: scale(0.65); position: relative; top: -100px;'>
+        <h3>Where is the oldest rug in the world from?</h3>
+        <p>Pick 1 answer</p>
+        <hr />
+        <!-- multiple choices -->
+      <!-- choice 1 -->
+        <div id='block-111' style='padding: 10px;'>
+          <label for='option-111' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='Kazakhstan' id='option-111' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+          Kazakhstan</label>
+          <span id='result-111'></span>
+        </div>
+        <hr />
+      <!--  choice 2-->
+        <div id='block-112' style='padding: 10px;'>
+          <label for='option-112' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='6' id='option-112' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Iran</label>
+          <span id='result-112'></span>
+        </div>
+        <hr />
+      <!-- choice 3 -->
+        <div id='block-113' style='padding: 10px;'>
+          <label for='option-113' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='1/3' id='option-113' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            India</label>
+          <span id='result-113'></span>
+        </div>
+        <hr />
+      <!-- choice number 4 -->
+        <div id='block-114' style='padding: 10px;'>
+          <label for='option-114' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='1/6' id='option-114' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Turkey</label>
+          <span id='result-114'></span>
+        </div>
+        <hr />
+        <button type='button' onclick='displayAnswer3()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+        <a id='showanswer3'></a>
+    </div>
+      
+      <!-- question4 -->
+      <div style='transform: scale(0.65); position: relative; top: -100px;'>
+        <h3>Which country is the biggest producer of rug</h3>
+        <p>Pick 1 answer</p>
+        <hr />
+        <!-- multiple choices -->
+      <!--  choice 1-->
+        <div id='block-d11' style='padding: 10px;'>
+          <label for='option-d11' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='6/24' id='option-d11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Kazakhestan</label>
+          <span id='result-d11'></span>
+        </div>
+        <hr />
+      <!-- choice 2  -->
+        <div id='block-d12' style='padding: 10px;'>
+          <label for='option-d12' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='6' id='option-d12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Iran</label>
+          <span id='result-d12'></span>
+        </div>
+        <hr />
+      <!-- choice 3 -->
+        <div id='block-d13' style='padding: 10px;'>
+          <label for='option-d13' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='1/3' id='option-d13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            India</label>
+          <span id='result-d13'></span>
+        </div>
+        <hr />
+      <!-- choice 4 -->
+        <div id='block-d14' style='padding: 10px;'>
+          <label for='option-d14' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='1/6' id='option-d14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Turkey</label>
+          <span id='result-d14'></span>
+        </div>
+        <hr />
+        <button type='button' onclick='displayAnswer4()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+        <a id='showanswer4'></a>
+    </div>
+      
+      <!-- question5 -->
+      <div style='transform: scale(0.65); position: relative; top: -100px;'>
+        <h3>Where did rugs originate from?</h3>
+        <p>Pick 1 answer</p>
+        <hr />
+        <!-- multiple choices -->
+        <!-- choice 1 -->
+      
+        <div id='block-f11' style='padding: 10px;'>
+          <label for='option-f11' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='6/24' id='option-f11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Pakistan</label>
+          <span id='result-f11'></span>
+        </div>
+        <hr />
+      <!--  choice 2 -->
+        <div id='block-f12' style='padding: 10px;'>
+          <label for='option-f12' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='6' id='option-f12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Nepal</label>
+          <span id='result-f12'></span>
+        </div>
+        <hr />
+      <!-- choice 3 -->
+        <div id='block-f13' style='padding: 10px;'>
+          <label for='option-f13' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='1/3' id='option-f13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Malaysia</label>
+          <span id='result-f13'></span>
+        </div>
+        <hr />
+      <!-- choice 4 -->
+        <div id='block-f14' style='padding: 10px;'>
+          <label for='option-f14' style=' padding: 5px; font-size: 2.5rem;'>
+            <input type='radio' name='option' value='1/6' id='option-f14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+            Iran</label>
+          <span id='result-f14'></span>
+        </div>
+        <hr />
+        <button type='button' onclick='displayAnswer5()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+      </div>
+      <!-- button -->
+      <a id='showanswer5'></a>
+      <button type="button" onclick="discount()" >check</button>
+
+      <!-- footer -->
+      <footer>
+        <div class="link">
+          <a href="form.html">Contavt Us</a>
+     <br>
+     <!-- takes the user to the game -->
+     <a href="quiz.html">Press Here To Play a Game about rugs</a>
+     <br>
+     <!-- following tags bring the users to creator's personal emails -->
+     <address>
+         To contact the website creater email to<a class="email" href="mailto:saminkoleini@gmail.com">S.K</a> and <a class="email" href="mailto:shirin.fateh@student.tdsb.on.ca">Sh.Fateh</a>
+     </address>
+ </div>
+ <!-- logo of our online shop   -->
+ <img id="logo" src="images/logo.png" alt="">
+     <!-- <img  id="logo"src="/" alt="ourLogo"> -->
+     </footer>
+      
+</body>
+
+</html>

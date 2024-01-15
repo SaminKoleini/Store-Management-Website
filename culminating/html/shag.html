@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="store.js" async></script>
+    <style>
+        
+body{
+             background-color: #FFFAFA;
+         }
+#headAfter {
+            background-color: #948e8ee0;
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            width: 1250px;
+             
+        }
+        #welcome {
+            width: 1250px;
+            height: 200px;
+            
+        }
+        #ThreeBox{
+            
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            padding-top: 70px;
+            padding-bottom: 100px;
+        }
+        
+        /* #box1 {
+             display: inline;
+            float: right; 
+            width: 300px;
+            margin-left: 100px;
+            margin-right: 50px; 
+            height: 300px;
+            
+        }
+        #box2{
+            
+            display: inline;
+             float: middle;  
+            width: 300px;
+            height: 300px;
+            
+        }
+        #box3{
+            display: inline;
+            float: left; 
+            width: 250px;
+             margin-right: 50px; 
+            height: 300px;
+        } */
+        
+        .shop-item-image{
+            width: 250px;
+            height: 370px;
+        }
+        .shop-item-title{
+            font-size: 22px;
+            
+        }
+        #box1 {
+            float: left;
+            width: 250px;
+            padding-left: 100px;
+            padding-bottom: 50px;
+            padding-top: 60px;
+        }
+        #box2{
+            float: left; 
+            width: 250px;
+            padding-left: 150px;
+            padding-bottom: 50px;
+            padding-top: 60px;
+        }
+        #box3{
+            float: left; 
+            width: 250px;
+            padding-left: 190px;
+            padding-bottom: 50px;
+            padding-top: 60px;
+        }
+        .section-header{
+            padding-left:600px ;
+        }
+        #cart {
+            width: 1250px;
+            height: 200px;
+            
+        }
+        #show{
+            position: fixed;
+            padding-right: 100px;
+            background-color: rgb(227, 189, 241);
+            height:30px ;
+        }
+        #head {
+            background-color: #FFFAFA;
+            text-align: center;
+            padding-top: 1px;
+            padding-bottom: 25px;
+            word-spacing: 15px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img id="welcome" src="images/shagHeader.png" alt="Welcome">
+    </header>
+    <nav id="head">
+        <!-- links to diffrent pages of website: -->
+        <a href="index.html">HomePage</a>
+        <a href="catagory.html">BackToCatagories</a>
+        <a href="persian.html">PersianRugs</a>
+        <a href="distressed.html">DistressedRugs</a>
+    </nav>
+    <main>
+        <!-- <img id="persianMain" src="images/persianRugsInfo.png" alt="carpet"> -->
+        <nav id="headAfter">Pick your favorite rugs and then come back here to press Show My Cart button to see yor cart
+           
+            <!-- <a href="#start"><button id="show">Show My Cart</button></a> -->
+        </nav>
+        <a href="#start"><button id="show">Show My Cart</button></a>
+
+        <section class="container content-section">
+        
+            <div class="ThreeBox">
+                <!-- item number 1 -->
+                <div class="shop-item" id="box1">
+                    <span class="shop-item-title">Ikat Border Shag Rug</span>
+                    <img class="shop-item-image" src="images/soukRug 2.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$820.99</span>
+                        <br>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+              <!-- item number 2 -->
+                   <div class="shop-item" id="box2">
+                    <span class="shop-item-title">Banded Shag Rug</span>
+                    <img class="shop-item-image" src="images/shag3.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1020.99</span>
+                        <br>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+   
+               
+              <!-- item number 3 -->
+               <div class="shop-item" id="box3">
+                <span class="shop-item-title">Charm Wool Rug</span>
+                <img class="shop-item-image" src="images/shag5.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$500.99</span>
+                    <br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        
+            <!-- line two(2) -->
+            <!-- item number 4 -->
+        <div class="ThreeBox">
+                <div class="shop-item" id="box1">
+                    <span class="shop-item-title">Bello Shag Wool Rug</span>
+                    <img class="shop-item-image" src="images/shag4.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$420.99</span>
+                        <br>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+              <!-- item number 5 -->
+                   <div class="shop-item" id="box2">
+                    <span class="shop-item-title">Souk Wool Rug</span>
+                    <img class="shop-item-image" src="images/joya-shag-rug-j.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$420.99</span>
+                        <br>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+   
+               
+               <!-- item number 6 -->
+               <div class="shop-item" id="box3">
+                <span class="shop-item-title">Ikat Border Shag Rug</span>
+                <img class="shop-item-image" src="images/MOr4.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$645.99</span>
+                    <br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- line three(3) -->
+         <!-- item number 7 -->
+        <div class="ThreeBox">
+            <div class="shop-item" id="box1">
+                <span class="shop-item-title">Wanderer Shag Rug</span>
+                <img class="shop-item-image" src="images/mediumMor.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">750.99</span>
+                    <br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+          <!-- item number 8 -->
+               <div class="shop-item" id="box2">
+                <span class="shop-item-title">Glam Shag Rug</span>
+                <img class="shop-item-image" src="images/shag1.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$500</span>
+                    <br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+           
+          <!-- item number 9 -->
+           <div class="shop-item" id="box3">
+            <span class="shop-item-title">Diamond Drift Shag Rug</span>
+            <img class="shop-item-image" src="images/shag2.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$850.75</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    
+        </section>
+
+        <img id="cart" src="images/cart.png" alt="cart">
+        <section class="container content-section">
+            <!-- <h2 class="section-header"></h2> -->
+            <a name="start"></a>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        
+           
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form</title>
+   <script src="form.html"></script>
+   <style>
+      /* it shows the size of box */
+      * {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+      }
+      /* setting the font to arial */
+      body {
+         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+         font-size: larger;
+         background-color: rgb(250, 209, 133);
+         color: rgb(247, 131, 131);
+         line-height: 2;
+      }
+      
+      #container {
+         margin: 30px auto;
+         max-width: 400px;
+      }
+
+      .form-wrap {
+         background-color: rgb(248, 239, 239);
+         border: rgb(243, 180, 180) 3px solid;
+         border-radius: 10px;
+         color: rgb(230, 197, 138);
+         padding: 15px 25px;
+      }
+
+
+      label {
+         display: block;
+      }
+
+      .form-wrap .form-group input {
+         padding: 10px;
+      }
+
+      #submitB {
+         background-color: rgb(235, 54, 235);
+         color: rgb(190, 43, 190);
+      }
+
+      #resetB {
+         background-color: rgb(240, 38, 240);
+
+      }
+   </style>
+</head>
+
+<body>
+
+   <div id="container">
+      <h1>Please fill this form if you have any problem with your rug.</h1>
+      <!-- it asks the user their first name -->
+      <div class="form-wrap">
+         <form action="">
+            <div class="form-group">
+               <label for="firstname" id="firstname">First name</label>
+               <input type="text" name="firstname" id="firstname">
+            </div>
+            <!-- it asks the user their last name -->
+            <div class="form-group">
+               <br>
+               <div>
+                  <label for="lastname" id="last name">Last name</label>
+                  <input type="text" name="lastname" id="lastname">
+
+               </div>
+               <div class="form-group">
+                  <br>
+                  <!-- it asks the user their address -->
+                  <div>
+                     <form action="">
+                        <div>
+                           <label for="address" id="address">Address</label>
+                           <input type="text" name="address" id="address">
+                        </div>
+                        <!-- it asks the user their Email -->
+                        <div class="form-group"> <br>
+                           <div>
+                     </form>
+                     <label for="email">Email</label>
+                     <input type="email" name="email" id="email">
+                  </div>
+                  <div class="form-group">
+                     <br>
+                     <!-- you can write about the problem of your rug here -->
+                     <div>
+                        <label for="message">About your problem</label>
+                        <textarea name="message" id="message" cols="15" rows="5"></textarea>
+                     </div>
+                     <div class="form-group">
+                        <br>
+                        <!-- The user can put its gender if they want -->
+                        <div>
+                           <label for="sex">Sex</label>
+                           <select name="sex" id="sex">
+                              <option value="male">Male</option>
+                              <option vallue="frmale" selected>Female</option>
+                              <option value="other">Other</option>
+                           </select>
+                        </div>
+                        <div class="form-group">
+                           <br>
+                           <!-- The user puts its name here -->
+                           <!-- You can only answer with numbers -->
+                           <div>
+                              <label for="age">Age</label>
+                              <input type="number" name="age" id="age">
+                           </div>
+                           <div class="form-group">
+                              <br>
+                              <div class="form-group">
+                              <!-- it asks the user's number -->
+                              <!-- you can only put numbers  -->
+                                 <div>
+                                    <label for="age">Phone number</label>
+                                    <input type="number" name="age" id="age">
+                                 </div>
+                                 <div class="form-group">
+                                    <br>
+                                    <!-- user puts his/her date of birth -->
+                                    <div>
+                                       <label for="bDate">Date of birth</label>
+                                       <input type="date" name="bDate" id="bDate">
+                                    </div>
+                                    <div class="form-group">
+                                       <br>
+                                       <div>
+                                          <!-- the user can select how many years he/her had his/her carpet -->
+                                          <!-- you can only select one answer -->
+                                          <label for="recieving date">How many years have you had your carpet?</label>
+                                          <input type="radio" name="recieving date" id="recieving date"
+                                             value="saturday">1 year
+                                          <input type="radio" name="recieving date" id="recieving date" value="Sunday">2
+                                          years
+                                          <input type="radio" name="recieving date" id="recieving date" value="Monday">3
+                                          years +
+                                       </div>
+                                       <div class="form-group">
+                                          <br>
+                                          <!-- the user can selecct hes/her rug problem -->
+                                          <!-- they can choose more than one answer -->
+                                          <div>
+                                             <label for="comment">My rug problem is</label>
+                                             <input type="checkbox" name="think" id="think"
+                                                value="Put it in front of my door">Loss of
+                                             color
+                                             <input type="checkbox" name="think" id="think"
+                                                value="Bring my rug in">Rupture
+                                             <input type="checkbox" name="think" id="think"
+                                                value="Bring my rug in and open">Others
+                                          </div>
+                                          <div class="form-group">
+                                             <br>
+                                             <div>
+                                             <!-- the user can sumbit their answer with this button -->
+                                                <input type="reset" value="Reset">
+                                                <button type="button" value="submit" id='buttonSu'>submit</button>
+                                                <script>
+                                                   function test() {
+                                                      alert('Thank you for your submission. We will repond less than 24 hours.');
+                                                   }
+
+                                                   document.getElementById('buttonSu').onclick = test; 
+                                                </script>
+
+
+                                             </div>
+
+         </form>
+      </div>
+      <footer>
+         <a href="index.html">back to home page</a>
+      </footer>
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="store.js" async></script>
+    <style>
+        
+body{
+             background-color: #FFFAFA;
+         }
+#headAfter {
+            background-color: #948e8ee0;
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        #welcome {
+            width: 1250px;
+            height: 200px;
+            
+        }
+        #ThreeBox{
+            
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            padding-top: 70px;
+            padding-bottom: 100px;
+        }
+        
+        
+        #show{
+            position: fixed;
+            padding-right: 100px;
+            background-color: rgb(227, 189, 241);
+            height:30px ;
+        }
+        .shop-item-image{
+            width: 250px;
+            height: 350px;
+        }
+        .shop-item-title{
+            font-size: 22px;
+            
+        }
+        #box1 {
+            float: left;
+            width: 250px;
+            padding-left: 100px;
+            padding-bottom: 50px;
+            padding-top: 60px;
+        }
+        #box2{
+            float: left; 
+            width: 250px;
+            padding-left: 150px;
+            padding-bottom: 50px;
+            padding-top: 60px;
+        }
+        #box3{
+            float: left; 
+            width: 250px;
+            padding-left: 190px;
+            padding-bottom: 50px;
+            padding-top: 60px;
+        }
+        #head {
+            background-color: #FFFAFA;
+            text-align: center;
+            padding-top: 1px;
+            padding-bottom: 25px;
+            word-spacing: 15px;
+        }
+        #show{
+            position: fixed;
+            padding-right: 100px;
+            background-color: rgb(227, 189, 241);
+            height:30px ;
+            
+        }
+        #cart {
+            width: 1250px;
+            height: 200px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img id="welcome" src="images/persianHeader.png" alt="Welcome"> 
+    </header>
+    <nav id="head">
+        <!-- links to diffrent pages of website: -->
+        <a href="index.html">HomePage</a>
+        <a href="catagory.html">BackToCatagories</a>
+        <a href="distressed.html">DistressedRugs</a>
+        <a href="shag.html">Shag</a>
+    </nav>
+    <main>
+        <img id="persianMain" src="images/persianRugsInfo.png" alt="carpet">
+        <nav id="headAfter">Pick your favorite rugs and then come back here to press Show My Cart button to see yor cart
+            <a href="#start">
+                <button id="show">Show My Cart</button>
+            </a>
+        </nav>
+       
+        <section class="container content-section">
+            
+
+        
+            <div class="ThreeBox">
+                <!-- item number 1 -->
+                <div class="shop-item" id="box1">
+                    <span class="shop-item-title">Bakhtiari 20 years Old wool on Cotton</span>
+                    <img class="shop-item-image" src="images/per4.PNG">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$420.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+              <!-- item number 2 -->
+                   <div class="shop-item" id="box2">
+                    <span class="shop-item-title">Saravan Wool on Cotton Hand-made Rug</span>
+                    <img class="shop-item-image" src="images/per1 (6).PNG">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$420.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+   
+               
+              <!-- item number 3 -->
+               <div class="shop-item" id="box3">
+                <span class="shop-item-title">Borchaloo Wool on Cotton Hand-made Rug</span>
+                <img class="shop-item-image" src="images/per5.PNG">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$420.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        
+            <!-- line two(2) -->
+             <!-- item number 4 -->
+        <div class="ThreeBox">
+                <div class="shop-item" id="box1">
+                    <span class="shop-item-title">Turkmen Persian Hand made Rug 1133</span>
+                    <img class="shop-item-image" src="images/per7.PNG">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$420.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+              <!-- item number 5 -->
+                   <div class="shop-item" id="box2">
+                    <span class="shop-item-title">BIJAR HALVAEI OLD</span>
+                    <img class="shop-item-image" src="images/per8.PNG">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$420.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+   
+               
+              <!-- item number 6 -->
+               <div class="shop-item" id="box3">
+                <span class="shop-item-title">Borchaloo Wool on Cotton Hand-made Rug</span>
+                <img class="shop-item-image" src="images/ps7.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$420.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- line three(3) -->
+        <!-- item number 7 -->
+        <div class="ThreeBox">
+            <div class="shop-item" id="box1">
+                <span class="shop-item-title">Turkmen Persian Hand made Rug 1133</span>
+                <img class="shop-item-image" src="images/per6.PNG">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$420.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+           <!-- item number 8 -->
+               <div class="shop-item" id="box2">
+                <span class="shop-item-title">BIJAR HALVAEI OLD</span>
+                <img class="shop-item-image" src="https://i.pinimg.com/originals/a4/9c/56/a49c56cfdf2cb9526f9c2e2ca6b16cf3.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$420.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+           
+          <!-- item number 9 -->
+           <div class="shop-item" id="box3">
+            <span class="shop-item-title">Borchaloo Wool on Cotton Hand-made Rug</span>
+            <img class="shop-item-image" src="https://www.carpetship.com/wp-content/uploads/2019/08/RedTabriz-Rug-Persian-carpet-for-sale-2x3m-DR418-DR419-6829.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$420.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    
+        </section>
+
+        <img id="cart" src="images/cart.png" alt="cart">
+        <section class="container content-section">
+
+            <!-- <h2 class="section-header">CART</h2> -->
+            <a name="start"></a>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <footer class="main-footer">
+           
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
